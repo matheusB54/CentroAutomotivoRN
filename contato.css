@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*FPRMATA A TAG (FORM) E TUDO QUE ESTA DENTRO DELA*/
+form{
+    width: 500px;
+    margin: auto;
+}
+/*FORMATA TODAS AS TAGS (INPUT)*/
+input, textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255,255,255,.8) ;
+}
+input:hover, textarea:hover{
+    background-color: #dddddd;
+
+	}
+/*FORMATA AS TAGS (LEGEND)*/	
+legend{
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+/*FPRMATAÇÃO DAS TAGS (FIELDSET)*/
+fieldset{
+    border-color: #cecece;
+    margin: 20px;
+}
+fieldset#usuario{
+    background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;
+}
+fieldset#endereco{
+    background: url("../_imagens/icone-endereco.png") no-repeat 95% 95%;
+}
+fieldset#mensagem{
+    background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95%;
+}

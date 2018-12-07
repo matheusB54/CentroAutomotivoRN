@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+	<meta charset = "UTF-8"/>
+	<title> Centro Automotivo RN </title>
+		<link rel="stylesheet" href="_css/home.css"/>
+		<link rel="stylesheet" href="_css/orcamento.css"/>
+</head>
+<body>
+<div  id="interface">
+	<header id="cabecalho"> 
+		<hgroup>
+			<h1> CENTRO <br> AUTOMOTIVO <br> RN</h1>
+			<h2> O seu carro em boas mãos ! </h2>
+		</hgroup>
+			<image>
+				<img id="icone" src="_imagens/carro.png"/>
+			</image>
+		<nav id="menu">
+			<h1>Menu Principal</h1>
+			<ul type="disc">
+				<li onmouseover="mudaFoto('_imagens2/home.jpg')" onmouseout="mudaFoto('_imagens2/orçamentos.png')"> <a href="home.html">Home</a></li>
+				<li onmouseover="mudaFoto('_imagens2/empresa.jpg')" onmouseout="mudaFoto('_imagens2/orçamentos.png')"> <a href="empresa.html">Empresa</a></li>
+				<li onmouseover="mudaFoto('_imagens2/serviços.png')" onmouseout="mudaFoto('_imagens2/orçamentos.png')"> <a href="serviços.html">Serviços</a></li>
+				<li onmouseover="mudaFoto('_imagens2/orçamentos.png')" onmouseout="mudaFoto('_imagens2/orçamentos.png')"> <a href="orçamentos.html">Orçamentos</a></li>
+				<li onmouseover="mudaFoto('_imagens2/contato.jpg')" onmouseout="mudaFoto('_imagens2/orçamentos.png')"> <a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1>Solicite o seu orçamento</h1>
+	<form method="post" id="fContato" action="mailto:dupladinamicaaaaaaaaa@outlook.com" oninput="calc_total()">
+		<fieldset id="Servico"><legend>Seu Serviço</legend>
+			<p><label for="cSer">Serviços:</label>
+			<select name="tSer" id="cSer">
+				<option value="">Alinhamento e Acabamento</option>
+				<option value="">Alinhamento e Acabamento e cabagem</option>
+				<option value="">Freios</option>
+				<option value="">Limpeza a Seco</option>
+				<option value="">Injeção Eletronica</option>
+				<option value="">Revisão Completa</option>
+				<option value="">Troca de Air Bag</option>
+				<option value="">Troca de Estofamento </option>
+				<option value="">Troca de Velas de Ignição</option>
+				<option value="">Troca de Parabrisas</option>
+				<option value="">Troca de óleo</option>
+				<option value="">Troca de pneus</option>
+				<option value="">Troca do Filtro de combustível</option>
+				<option value="">Troca de Filtro de óleo)</option>
+				<option value="">Vidros (Troca e Reparos)</option>
+				<option value="">Película de Vidro</option>
+			</select>
+			</p>
+		</fieldset>
+		<fieldset id="Carro"><legend>Seu Veículo</legend>
+			<p><label for="cCar">Veículo: </label>
+			<select name="tCar" id="cCar">
+				<option value="">Toyota Prius</option>
+				<option value="">VW up</option>
+				<option value="">Fiat Mobi</option>
+				<option value="">Chevrolet Prisma</option>
+				<option value="">Land Rover Evoque</option>
+				<option value="">Peugeot 208</option>
+				<option value="">Volvo XC90</option>
+				<option value="">Ford Ka</option>
+				<option value="">Citroën C3</option>
+				<option value="">Renault Kwid</option>
+				<option value="">Chevrolet Prisma</option>
+				<option value="">Chevrolet Onix</option>
+				<option value="">Ford New Fiesta Hatch</option>
+				<option value="">Nissan New Versa</option>
+				<option value="">Volkswagen Voyage</option>
+				<option value="">Audi A1 Sportback</option>
+				<option value="">Fiat Uno</option>
+				<option value="">Hyundai HB20S</option>
+				<option value="">Chevrolet Cobalt</option>
+			</select>
+			</p>
+		</fieldset>
+		<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+			<p><label for="cUrg">Grau de Urgência:</label>
+					Mín <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/> Max</p>
+			<p><label for="cMsg">Mensagem:</label>
+			<textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua observação."></textarea></p>
+		</fieldset>
+		<fieldset id="endereco"><legend>Informações do Usuário</legend>
+			<p><label for="cTel">Telefone: </label>
+				<input type="text" name="tTel" id="cTel" size="15" maxlength="10" placeholder="Ex: (61)9999-9999"></p>
+			<p><label for="cMail"> E-mail: </label>
+				<input type="email" name="tMail" id="cMail" size="30" maxlength="40" placeholder="Ex: centroautomotivorn@gmail.com"/></p>
+			<p><label for="cCep">CEP:</label>
+				<input type="text" name="tCep" id="cCep" size="20" maxlength="30" placeholder="Ex: 87965972"></p>
+		</fieldset>
+			<input type="image" name="tEnviar" src="_imagens/botao-enviar.png">
+	</form>
+	
+	<section id="corpo-full">
+		<article id="noticia-principal">
+			<header id="cabecalho-artigo">
+				<hgroup>
+					<h2> Por Matheus & Ygor Átila</h2>
+					<h3 class="direita"> Atualizado em 21/11/2018</h3>
+				</hgroup>
+			</header>
+		</article>
+	</section>
+</div>
+<footer id="rodape">
+	<p>Copyright &copy; 2018 - by Matheus Barros e Ygor Átila<br/>
+	<a href="http://facebook.com/matheus.barrosdesouza1" target="_blank">Facebook</a>
+	<a href="https://www.facebook.com/ygor.atila.3" target="_blank"> Facebook</a> </p>
+</footer>
+</div>
+</body>
+</html>

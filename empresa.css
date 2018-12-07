@@ -1,0 +1,13 @@
+@charset "UTF-8";
+ /* FORMATA O CONTEUDO DENTRO A TAG SECTION */ 
+section#conteudo {
+    width: 1000px;
+    margin: auto;
+}
+/* O LINK <link rel="stylesheet" href="_css/home.css"/> DENTRO DA PAGINA JÁ 
+ESTÁ ATRIBUINDO A FORMATAÇÃO DA PAGINA INICIAL A TODAS AS OUTRAS TAGS 
+RESTANTES. A FORMATAÇÃO ACIMA ESTÁ FORMATANDO AS NOVAS TAGS QUE FORAM 
+ADICIONADAS A PAGINA.
+*/
+
+

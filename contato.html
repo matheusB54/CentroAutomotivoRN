@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+	<meta charset = "UTF-8"/>
+	<title> Centro Automotivo RN </title>
+		<link rel="stylesheet" href="_css/home.css"/>
+		<link rel="stylesheet" href="_css/contato.css"/>
+</head>
+<body>
+<div  id="interface"> 
+    <header id="cabecalho"> 
+		<hgroup>
+			<h1> CENTRO <br> AUTOMOTIVO <br> RN</h1>
+			<h2> O seu carro em boas mãos ! </h2>
+		</hgroup>
+			<image>
+				<img id="icone" src="_imagens/carro.png"/>	
+			</image>
+		<nav id="menu">
+			<h1>Menu Principal</h1>
+			<ul type="disc">
+				<li onmouseover="mudaFoto('_imagens2/home.jpg')" onmouseout="mudaFoto('_imagens2/contato.jpg')"> <a href="home.html">Home</a></li>
+				<li onmouseover="mudaFoto('_imagens2/empresa.jpg')" onmouseout="mudaFoto('_imagens2/contato.jpg')"> <a href="empresa.html">Empresa</a></li>
+				<li onmouseover="mudaFoto('_imagens2/serviços.png')" onmouseout="mudaFoto('_imagens2/contato.jpg')"> <a href="serviços.html">Serviços</a></li>
+				<li onmouseover="mudaFoto('_imagens2/orçamentos.png')" onmouseout="mudaFoto('_imagens2/contato.jpg')"> <a href="orçamentos.html">Orçamentos</a></li>
+				<li onmouseover="mudaFoto('_imagens2/contato.jpg')" onmouseout="mudaFoto('_imagens2/contato.jpg')"> <a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="corpo-full">
+		<header id="cabecalho-artigo">
+			<hgroup>
+				<h3>Formulário de Contato</h3>
+				<h3>por Ygor Átila & Matheus Barros</h3>
+				<h3 class="direita">Atualizado em 21/11/2018</h3>
+			</hgroup>
+		</header>
+		<form method="post" id="fContato" action="mailto:dupladinamicaaaaaaaaa@outlook.com" oninput="calc_total()">
+			<fieldset id="usuario"><legend>Identificação do Usuário</legend>
+				<p><label for="cNome">Nome: </label>
+					<input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"/></p>
+				<p><label for="cSenha">Senha:</label>
+					<input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 Digitos"/></p>
+				<p><label for="cMail"> E-mail: </label>
+					<input type="email" name="tMail" id="cMail" size="20" maxlength="40"/></p>
+			</fieldset>
+			<fieldset id="endereco"><legend>Endereço do Usuário</legend>
+				<p><label for="cQC">Logradouro:</label>
+					<input type="text" name="tQC" id="cQC" size="20" maxlength="80" placeholder="Quadra, Conjunto, Número"> </p>
+				<p><label for="cNum">Número:</label>
+					<input type="number" name="tNum" id="cNum" min="0" max="9999"></p>
+				<p><label for="cEst">Estado:</label>
+				<select name="tEst" id="cEst">
+					<optgroup label="Região Centro-Oeste">
+						<option value="DF">Brasília</option>
+						<option value="GO">Goiás</option>
+						<option value="MT">Mato Grosso</option>
+						<option value="MS">Mato Grosso do Sul</option>
+					</optgroup>
+					<optgroup label="Região Sudeste">
+						<option value="MG">Minas Gerais</option>
+						<option value="SP">São Paulo</option>
+						<option value="RJ">Rio de Janeiro</option>
+					</optgroup>
+					<optgroup label="Região Nordeste">
+						<option value="BH">Bahia</option>
+					</optgroup>
+				</select> </p>
+					<p><label for="cCid">Cidade: </label>
+						<input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Sua Cidade" list="cidades"/></p>
+				<datalist id="cidades">
+					<option value="Brasília"></option>
+					<option value="Taguatinga"></option>
+					<option value="Santa Maria"></option>
+					<option value="Gama"></option>
+				</datalist>
+			</fieldset>
+			<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+				<p><label for="cMsg">Mensagem:</label>
+				<textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem, entraremos em contato assim que possível."></textarea></p>
+			</fieldset>
+				<input type="image" name="tEnviar" src="_imagens/botao-enviar.png">
+		</form>
+	</section>	
+	<footer id="rodape">
+		<p>Copyright &copy; 2018 - by Matheus Barros e Ygor Átila<br/>
+		<a href="http://facebook.com/matheus.barrosdesouza1" target="_blank">Facebook</a>
+		<a href="https://www.facebook.com/ygor.atila.3" target="_blank"> Facebook</a> </p>
+	</footer>
+</div>
+</body>
+</html>
